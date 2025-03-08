@@ -1,0 +1,70 @@
+<html>
+<body>
+<textarea cols="90" rows="65">
+
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij(){window.close();
+        }
+
+        function Owoc(jaki_owoc, smak, kolor) {
+            this.jaki_owoc = jaki_owoc;
+            this.smak = smak;
+            this.kolor = kolor;
+        }
+
+        Owoc.prototype.pokaz = function () {
+            document.body.innerHTML =
+                '<h2>Obiekt: owoc</h2>' +
+                '<p>Pola:</p>' +
+                '<p>jaki_owoc: ' + this.jaki_owoc + '</p>' +
+                '<p>smak: ' + this.smak + '</p>' +
+                '<p>kolor: ' + this.kolor + '</p>' +
+                '<button onclick="wrocNaGlowna()">Wróć na główną</button>';
+        };
+
+        var owoc1 = new Owoc('banan', 'słodki', 'żółty');
+        var owoc2 = new Owoc('jabłko', 'kwaśny', 'czerwony');
+        var owoc3 = new Owoc('gruszka', 'słodki', 'zielony');
+
+        Owoc.prototype.cena = '2.50 PLN';
+        Owoc.prototype.owoc_pokaz_Kozlicki = function () {
+            document.body.innerHTML =
+                '<h2>Nowe Pole</h2>' +
+                '<p>Nowa właściwość: cena = ' + this.cena + '</p>' +
+                '<button onclick="wrocNaGlowna()">Wróć na główną</button>';
+};
+
+function wrocNaGlowna(){location.reload();
+}
+</script>
+</head>
+<body>
+<br>
+<h2>Programowanie obiektowe</h2>
+<p>Obiekt to owoc</p>
+<p>Pola:</p>
+<ul>
+<li>jaki_owoc</li>
+<li>smak</li>
+<li>kolor</li>
+</ul>
+<p>Metoda: pokaz</p>
+<p>Nowe pole: cena</p>
+<p>Nowa metoda: owoc_pokaz_Kozlicki()</p>
+<br>
+<button onclick="owoc1.pokaz();">Pokaż obiekt 1</button>
+<button onclick="owoc2.pokaz();">Pokaż obiekt 2</button>
+<button onclick="owoc3.pokaz();">Pokaż obiekt 3</button>
+<button onclick="owoc1.owoc_pokaz_Kozlicki();">Pokaż nowe pole</button>
+
+<br><br>
+<button onclick="okno_zamknij()">Zamknij okno</button>
+<br><br>
+
+</body>
+</html>
+</textarea>
+</body>
+</html>
