@@ -7,8 +7,8 @@
 
         var owoc = {
             jaki_owoc: 'banan',
-            smak: 's³odki',
-            kolor: '¿ó³ty',
+            smak: 'sÅ‚odki',
+            kolor: 'Å¼Ã³Å‚ty',
             pokaz: function () {
                 document.body.innerHTML =
                     '<h2>Obiekt: owoc</h2>' +
@@ -16,7 +16,7 @@
                     '<p>jaki_owoc: ' + this.jaki_owoc + '</p>' +
                     '<p>smak: ' + this.smak + '</p>' +
                     '<p>kolor: ' + this.kolor + '</p>' +
-                    '<button onclick="wrocNaGlowna()">Wróæ na g³ówn¹</button>';
+                    '<button onclick="wrocNaGlowna()">WrÃ³Ä‡ na gÅ‚Ã³wnÄ…</button>';
             }
         };
 
@@ -24,8 +24,8 @@
         owoc.owoc_pokaz_Kozlicki = function () {
             document.body.innerHTML =
                 '<h2>Nowe Pole</h2>' +
-                '<p>Nowa w³aœciwoœæ: cena = ' + this.cena + '</p>' +
-                '<button onclick="wrocNaGlowna()">Wróæ na g³ówn¹</button>';
+                '<p>Nowa wÅ‚aÅ›ciwoÅ›Ä‡: cena = ' + this.cena + '</p>' +
+                '<button onclick="wrocNaGlowna()">WrÃ³Ä‡ na gÅ‚Ã³wnÄ…</button>';
         };
 
         function wrocNaGlowna() {
@@ -38,17 +38,17 @@
     <h2>Programowanie obiektowe</h2>
     <p>Obiekt to owoc</p>
     <p>Pola:</p>
-    <ul>
-        <li>jaki_owoc</li>
-        <li>smak</li>
-        <li>kolor</li>
-    </ul>
+   
+        jaki_owoc<br>
+        smak<br>
+        kolor<br>
+    
     <p>Metoda: pokaz</p>
     <p>Nowe pole: cena</p>
     <p>Nowa metoda: owoc_pokaz_Kozlicki()</p>
     <br>
-    <button onclick="owoc.pokaz();">Poka¿ obiekt</button>
-    <button onclick="owoc.owoc_pokaz_Kozlicki();">Poka¿ nowe pole</button>
+    <button onclick="owoc.pokaz();">PokaÅ¼ obiekt</button>
+    <button onclick="owoc.owoc_pokaz_Kozlicki();">PokaÅ¼ nowe pole</button>
     <br><br>
     <button onclick="okno_zamknij()">Zamknij okno</button>
     <br><br>
